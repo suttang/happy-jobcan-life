@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul#operations {
+  margin: 6px 0;
+  padding: 0;
+  list-style: none;
+}
+ul#operations li {
+  width: 260px;
+}
+ul#operations li a {
+  display: flex;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+ul#operations li a:hover {
+  background: rgb(234, 235, 235);
+}
+ul#operations li a .material-icons {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.80)
+}
+ul#operations li a .text {
+  position: relative;
+  top: -1px;
+  padding-left: 10px;
+  font-size: 11px;
+}
+
+#input-attendance.disabled {
+  cursor: default;
+  opacity: 0.3;
+  pointer-events: none;
+}

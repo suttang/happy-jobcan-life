@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Happy Jobcan life",
+  "version": "1.0",
+  "description": "ジョブカン大好き",
+  "browser_action": {
+    "default_icon": "assets/images/icon.png",
+    "default_title": "aiueo",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://ssl.jobcan.jp/*"],
+      "js": ["libs/jobcan.js", "libs/moment.min.js"]
+    }
+  ],
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "icons" : {
+    "128": "assets/images/icon.png"
+  }
+}
